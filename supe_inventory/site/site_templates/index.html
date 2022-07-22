@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+</div>
+<section id="How It Works" class="px-5 py-3" style="background-color:hsl(10, 71%, 15%);width: 100% ;">
+        <div class="container">
+            <div class="row align-items-center justify-content-between" >
+                <div class="col-md p-5 w-40" >
+                    <h1 style="font-weight: bold; font-size: 40px; color: whitesmoke;">
+                        CREATE AWESOME STUFF
+                        WITH THE WORLD'S
+                        GREATEST COMIC API</h1>
+                    <p class="card-text mt-3" style="font-weight: bold; color: darkgrey;">The Marvel Comics API allows developers everywhere to access information about Marvel's vast library
+                         of comics—from what's coming up, to 70 years ago.</p>
+                    <div class="d-flex">
+                        <a class="btn btn-danger btn-md me-3" style="border-radius: 10px; font-weight: bold;" href="{{ url_for('auth.signup') }}" role="button">Get Started<i class="bi bi-chevron-double-right"></i></a>
+                        <a class="btn btn-danger btn-md" style="border-radius: 10px; font-weight: bold;" href="{{ url_for('auth.signin') }}" role="button">Sign-In<i class="bi bi-chevron-double-right"></i></a>
+                        
+                    </div>
+                    <p class="pt-2 mt-2" style="font-weight: bold; color: darkgrey;" >Already using <span style="color:rgb(154, 151, 151); font-weight: bolder;">Have</span>
+                        Account?<span style="color:rgb(154, 151, 151); font-weight: bolder;"> Sign In</span></p>
+                </div>
+                <div class="col-md d-flex justify-content-center">
+                    <img src="../../static/images/iron-man-8721.png" class="img-fluid w-5" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+{% endblock content %}
